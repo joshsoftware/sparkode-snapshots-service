@@ -52,9 +52,9 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'http'
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'active_model_serializers'
-gem 'simplecov', require: false
 gem 'aws-sdk-s3'
 gem 'figaro'
+gem 'http'
+gem 'simplecov', require: false
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

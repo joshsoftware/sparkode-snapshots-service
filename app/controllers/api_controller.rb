@@ -5,7 +5,7 @@ class ApiController < ActionController::API
 
   rescue_from ActiveRecord::RecordNotFound, with: :error_render_method
   rescue_from ActiveRecord::RecordInvalid, with: :error_render_method
-  rescue_from ActiveRecord::NotNullViolation, with: :render_missing_error
+  # rescue_from ActiveRecord::NotNullViolation, with: :render_missing_error
 
   # rescue_from CanCan::AccessDenied do |_exception|
   #   render json: { message: I18n.t('user.unauthorized') }, status: 403

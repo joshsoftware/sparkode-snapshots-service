@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class SnapshotSerializer < ActiveModel::Serializer
   attributes :id, :image_url, :created_at
 
